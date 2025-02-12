@@ -7,7 +7,7 @@ async function fetchNews() {
     data.articles.slice(0, 10).forEach(article => {
         const newsItem = document.createElement('div');
         newsItem.classList.add('news');
-        newsItem.innerHTML = '
+        newsItem.innerHTML = `
             <h2><a href="${article.url}" target="_blank">${article.title}</a></h2>
             <p>${article.description || 'No description available.'}</p>
         `;
