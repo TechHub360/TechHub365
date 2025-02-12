@@ -1,5 +1,5 @@
 async function fetchNews() {
-    const apiKey = 'your-api-key-here'; // Replace with your API key
+    const apiKey = 'f6ad26658b6c4f818a4a59922913ac8b'; // 
     const response = await fetch(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=${apiKey}`);
     const data = await response.json();
     const newsContainer = document.getElementById('news-container');
